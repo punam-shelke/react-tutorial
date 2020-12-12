@@ -37,6 +37,10 @@ const Title = () => (
   </h1>
 );
 
-const Author = () => <h4>Robert T. Kiyosaki</h4>;
+const Author = () => (
+  <h4 style={{ color: "#617d98", fontSize: "0.75rem", marginTop: "0.25rem" }}>
+    Robert T. Kiyosaki
+  </h4>
+);
 
 ReactDom.render(<BookList />, document.getElementById("root"));
