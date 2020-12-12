@@ -1,6 +1,10 @@
 import React from "react";
 import ReactDom from "react-dom";
+
+//css
 import "./index.css";
+//setup vars
+const author = "Robert T. Kiyosaki";
 
 function BookList() {
   return (
@@ -11,7 +15,6 @@ function BookList() {
     </section>
   );
 }
-const author = "Robert T. Kiyosaki";
 const Book = () => {
   const title = `Rich Dad Poor Dad : What The Rich Teach Their Kids About Money That the
         Poor and Middle Class Do Not!`;
