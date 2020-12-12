@@ -1,18 +1,42 @@
 import React from "react";
 import ReactDom from "react-dom";
+import "./index.css";
 
-function Greeting() {
+function BookList() {
   return (
-    <div>
-      <Person />
-      <Message />
-    </div>
+    <section className="booklist">
+      <Book />
+      <Book />
+      <Book />
+    </section>
   );
 }
 
-const Person = () => <h2>Poonam Shelke</h2>;
-const Message = () => {
-  return <p>This is my message</p>;
+const Book = () => {
+  return (
+    <article className="book">
+      <Image />
+      <Title />
+      <Author />
+    </article>
+  );
+};
+const Image = () => {
+  return (
+    <img
+      src="https://images-eu.ssl-images-amazon.com/images/I/91VokXkn8hL._AC_UL200_SR200,200_.jpg"
+      alt="rich dad poor dad"
+    />
+  );
 };
 
-ReactDom.render(<Greeting />, document.getElementById("root"));
+const Title = () => (
+  <h1>
+    Rich Dad Poor Dad : What The Rich Teach Their Kids About Money That the Poor
+    and Middle Class Do Not!
+  </h1>
+);
+
+const Author = () => <h4>Robert T. Kiyosaki</h4>;
+
+ReactDom.render(<BookList />, document.getElementById("root"));
