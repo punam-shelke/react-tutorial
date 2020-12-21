@@ -23,7 +23,7 @@ const Book = () => {
     <article className="book">
       <img src={image} alt="rich dad poor dad" />
       <h1>{title}</h1>
-      <h4>{author.toUpperCase()}</h4>
+      <h4>{author}</h4>
     </article>
   );
 };
